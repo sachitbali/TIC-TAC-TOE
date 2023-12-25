@@ -25,3 +25,7 @@ jobs:
       #   env:
       #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       
+      - name: NPM Install
+        run: npm install 
+
+    
