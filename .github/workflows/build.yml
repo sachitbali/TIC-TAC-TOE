@@ -37,6 +37,7 @@ jobs:
           docker tag tic-tac-toe sachitbali/tic-game:latest
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKER_TOKEN }}
           docker push sachitbali/tic-game:latest
+          docker rmi . -f
         env:
           DOCKER_CLI_ACI: 1
     
